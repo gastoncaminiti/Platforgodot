@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/lowRandom.ogg-ecd0e5595bde441260b0b8ceb2191aaf.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Sfx/Game/lowRandom.ogg"
+dest_files=[ "res://.import/lowRandom.ogg-ecd0e5595bde441260b0b8ceb2191aaf.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

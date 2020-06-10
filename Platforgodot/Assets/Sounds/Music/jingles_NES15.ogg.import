@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jingles_NES15.ogg-d2f839d174e628b7e7cc009969f84a23.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Music/jingles_NES15.ogg"
+dest_files=[ "res://.import/jingles_NES15.ogg-d2f839d174e628b7e7cc009969f84a23.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

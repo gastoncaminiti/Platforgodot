@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/impactSoft_medium_004.ogg-75717ac1485ee7b4b49343c6dc73c266.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Sfx/Game/impactSoft_medium_004.ogg"
+dest_files=[ "res://.import/impactSoft_medium_004.ogg-75717ac1485ee7b4b49343c6dc73c266.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

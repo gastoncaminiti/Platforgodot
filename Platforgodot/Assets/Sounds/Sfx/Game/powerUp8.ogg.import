@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/powerUp8.ogg-18e0945447ebf838cec60d7b3a3847c6.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Sfx/Game/powerUp8.ogg"
+dest_files=[ "res://.import/powerUp8.ogg-18e0945447ebf838cec60d7b3a3847c6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

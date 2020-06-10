@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Inteface.ogg-6e79057f956123af3b0f818d4231b7c2.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Music/Inteface.ogg"
+dest_files=[ "res://.import/Inteface.ogg-6e79057f956123af3b0f818d4231b7c2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
