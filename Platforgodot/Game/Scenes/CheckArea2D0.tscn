@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 28.7376, 5.90071 )
+
+[node name="CheckArea2D0" type="Area2D"]
+scale = Vector2( 0.360001, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( -2.53864, 2.05481 )
+shape = SubResource( 1 )
