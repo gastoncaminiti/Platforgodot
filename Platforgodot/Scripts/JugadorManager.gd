@@ -5,21 +5,23 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 var velocity= Vector2()
+export var speed = 200
+export var gravity = 200
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print(DataManager.init_position)
+	print(DataManager.life_player)
 	global_position = DataManager.init_position
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	velocity.y += 200 * delta
+	velocity.y += gravity * delta
 	if Input.is_action_pressed("Robot_jump") and is_on_floor():
-		velocity.y = -200
+		velocity.y = -speed
 	if Input.is_action_pressed("Robot_left"):
-		velocity.x = -200
+		velocity.x = -speed
 		$AnimationPlayer.play("Left")
 	if Input.is_action_pressed("Robot_right"):
-		velocity.x = 200
+		velocity.x = speed
 		$AnimationPlayer.play("Right")
 	if !Input.is_action_pressed("Robot_right") and !Input.is_action_pressed("Robot_left"):
 		velocity.x = 0
@@ -30,6 +32,7 @@ func _process(delta):
 
 func _on_Area2D_body_entered(body):
 	if body == self:
+		DataManager.life_player -= 1
 		get_tree().reload_current_scene()
 
 func _on_CheckArea2D0_body_entered(body):

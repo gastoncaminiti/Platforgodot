@@ -1,8 +1,9 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Assets/Images/Map/platformerPack_industrial_tilesheet.png" type="Texture" id=1]
 [ext_resource path="res://Game/Scenes/Jugador.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Game/Scenes/CheckArea2D0.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Game/Scenes/Vida.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 4.79132, 0, 65.6311, 0, 70, 18.7454, 0, 18.1872 )
@@ -408,6 +409,8 @@ tile_data = PoolIntArray( 65530, 0, 131072, 65531, 0, 131072, 14, 0, 131072, 15,
 
 [node name="Jugador" parent="." instance=ExtResource( 2 )]
 position = Vector2( -76.0617, 215.728 )
+speed = 300
+gravity = 600
 
 [node name="Camera2D" type="Camera2D" parent="Jugador"]
 current = true
@@ -448,6 +451,12 @@ position = Vector2( 325.059, 267.78 )
 
 [node name="CheckArea2D2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 675.893, 269.212 )
+
+[node name="Vida00" parent="." instance=ExtResource( 4 )]
+position = Vector2( -0.38855, 236.311 )
+
+[node name="Vida0" parent="." instance=ExtResource( 4 )]
+position = Vector2( -193.706, 232.015 )
 [connection signal="body_entered" from="FallArea2D0" to="Jugador" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="FallArea2D1" to="Jugador" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="FallArea2D2" to="Jugador" method="_on_Area2D_body_entered"]
