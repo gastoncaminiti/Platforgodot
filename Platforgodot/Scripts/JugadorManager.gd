@@ -10,8 +10,9 @@ export var gravity = 200
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print(DataManager.life_player)
-	global_position = DataManager.init_position
+	#DataManager.life_player = 3
+	DataManager.set_life_player(3)
+	DataManager.init_position = global_position
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	velocity.y += gravity * delta
@@ -32,8 +33,11 @@ func _process(delta):
 
 func _on_Area2D_body_entered(body):
 	if body == self:
-		DataManager.life_player -= 1
-		get_tree().reload_current_scene()
+		DataManager.set_life_player(-1)
+		if !DataManager.is_game_over():
+			global_position = DataManager.init_position
+		else:
+			get_tree().reload_current_scene()
 
 func _on_CheckArea2D0_body_entered(body):
 	if body == self:

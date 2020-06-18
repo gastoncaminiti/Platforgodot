@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Images/Map/Elements/laserGreenHorizontal.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Images/Map/Elements/laserGreenBurst.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/LaserManager.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Sounds/Sfx/Game/impactTin_medium_004.ogg" type="AudioStream" id=4]
+
+[sub_resource type="CapsuleShape2D" id=1]
+height = 44.1317
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Delete",
+"speed": 8.0
+} ]
+
+[node name="Laser" type="KinematicBody2D"]
+script = ExtResource( 3 )
+my_speed = Vector2( 0, 300 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+rotation = 1.5708
+z_index = -1
+frames = SubResource( 2 )
+animation = "Idle"
+
+[node name="SfxImpact" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

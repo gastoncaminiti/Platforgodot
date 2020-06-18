@@ -1,9 +1,16 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Assets/Images/Map/platformerPack_industrial_tilesheet.png" type="Texture" id=1]
 [ext_resource path="res://Game/Scenes/Jugador.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Game/Scenes/CheckArea2D0.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Game/Scenes/Vida.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Interfaces/HUB.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Game/Scenes/Targets/Disco.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Game/Scenes/Targets/Pantalla.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Sounds/Music/Game.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Scripts/NivelManager.gd" type="Script" id=9]
+[ext_resource path="res://Game/Scenes/TorreEnemiga.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Game/Scenes/TorreEnemigaB.tscn" type="PackedScene" id=11]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 4.79132, 0, 65.6311, 0, 70, 18.7454, 0, 18.1872 )
@@ -393,22 +400,21 @@ points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
 } ]
 0/z_index = 0
 
-[sub_resource type="CircleShape2D" id=43]
-radius = 22.5604
-
-[sub_resource type="RectangleShape2D" id=44]
+[sub_resource type="RectangleShape2D" id=43]
 extents = Vector2( 136.982, 12.1249 )
 
 [node name="Nivel0" type="Node2D"]
+script = ExtResource( 9 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 42 )
 cell_size = Vector2( 70, 70 )
 format = 1
-tile_data = PoolIntArray( 65530, 0, 131072, 65531, 0, 131072, 14, 0, 131072, 15, 0, 131072, 131066, 0, 131072, 131067, 0, 131072, 65550, 0, 131072, 65551, 0, 131072, 196602, 0, 131072, 196603, 0, 131072, 131086, 0, 131072, 131087, 0, 131072, 262138, 0, 131072, 262139, 0, 131072, 196609, 0, 131084, 196612, 0, 131084, 196617, 0, 131084, 196622, 0, 131072, 196623, 0, 131072, 327674, 0, 2, 327675, 0, 2, 327676, 0, 2, 327677, 0, 2, 327678, 0, 2, 327679, 0, 2, 262144, 0, 2, 262145, 0, 2, 262148, 0, 2, 262149, 0, 2, 262150, 0, 2, 262153, 0, 2, 262154, 0, 2, 262158, 0, 2, 262159, 0, 2, 393210, 0, 4, 393211, 0, 4, 393212, 0, 4, 393213, 0, 4, 393214, 0, 4, 393215, 0, 4, 327680, 0, 4, 327681, 0, 4, 327684, 0, 4, 327685, 0, 4, 327686, 0, 4, 327689, 0, 4, 327690, 0, 4, 327694, 0, 4, 327695, 0, 4, 458746, 0, 4, 458747, 0, 4, 458748, 0, 4, 458749, 0, 4, 458750, 0, 4, 458751, 0, 4, 393216, 0, 4, 393217, 0, 4, 393220, 0, 4, 393221, 0, 4, 393222, 0, 4, 393225, 0, 4, 393226, 0, 4, 393230, 0, 4, 393231, 0, 4 )
+tile_data = PoolIntArray( -65532, 0, 196614, -65531, 0, 196615, -65530, 0, 196615, -65529, 0, 196615, -65528, 0, 196615, -65527, 0, 196615, -65526, 0, 196615, -65525, 0, 196615, -65524, 0, 196616, 14, 0, 131072, 15, 0, 131072, 131062, 0, 131072, 65550, 0, 131072, 65551, 0, 131072, 196598, 0, 131072, 196599, 0, 131072, 131086, 0, 131072, 131087, 0, 131072, 262134, 0, 131072, 262135, 0, 131072, 262136, 0, 131072, 196609, 0, 131084, 196612, 0, 131084, 196617, 0, 131084, 196622, 0, 131072, 196623, 0, 131072, 327670, 0, 4, 327671, 0, 4, 327672, 0, 2, 327673, 0, 2, 327674, 0, 2, 327675, 0, 2, 327676, 0, 2, 327677, 0, 2, 327678, 0, 2, 327679, 0, 2, 262144, 0, 2, 262145, 0, 2, 262148, 0, 2, 262149, 0, 2, 262150, 0, 2, 262153, 0, 2, 262154, 0, 2, 262158, 0, 2, 262159, 0, 2, 393206, 0, 4, 393207, 0, 4, 393208, 0, 4, 393209, 0, 4, 393210, 0, 4, 393211, 0, 4, 393212, 0, 4, 393213, 0, 4, 393214, 0, 4, 393215, 0, 4, 327680, 0, 4, 327681, 0, 4, 327684, 0, 4, 327685, 0, 4, 327686, 0, 4, 327689, 0, 4, 327690, 0, 4, 327694, 0, 4, 327695, 0, 4, 458742, 0, 4, 458743, 0, 4, 458744, 0, 4, 458745, 0, 4, 458746, 0, 4, 458747, 0, 4, 458748, 0, 4, 458749, 0, 4, 458750, 0, 4, 458751, 0, 4, 393216, 0, 4, 393217, 0, 4, 393218, 0, 196617, 393219, 0, 196617, 393220, 0, 4, 393221, 0, 4, 393222, 0, 4, 393223, 0, 196617, 393224, 0, 196617, 393225, 0, 4, 393226, 0, 4, 393227, 0, 196617, 393228, 0, 196617, 393229, 0, 196617, 393230, 0, 4, 393231, 0, 4, 524278, 0, 4, 524279, 0, 4, 524280, 0, 4, 524281, 0, 4, 524282, 0, 4, 524283, 0, 4, 524284, 0, 4, 524285, 0, 4, 524286, 0, 4, 524287, 0, 4, 458752, 0, 4, 458753, 0, 4, 458754, 0, 4, 458755, 0, 4, 458756, 0, 4, 458757, 0, 4, 458758, 0, 4, 458759, 0, 4, 458760, 0, 4, 458761, 0, 4, 458762, 0, 4, 458763, 0, 4, 458764, 0, 4, 458765, 0, 4, 458766, 0, 4, 458767, 0, 4 )
 
 [node name="Jugador" parent="." instance=ExtResource( 2 )]
-position = Vector2( -76.0617, 215.728 )
+position = Vector2( -382.29, 209.381 )
+z_index = 1
 speed = 300
 gravity = 600
 
@@ -417,49 +423,63 @@ current = true
 zoom = Vector2( 1.1, 1.1 )
 offset_h = 1.0
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2( 124.456, 48.3775 )
-gravity_scale = 7.0
+[node name="FallAreas2D" type="Node2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2( 80.589, 31.5348 )
-shape = SubResource( 43 )
-
-[node name="FallArea2D0" type="Area2D" parent="."]
+[node name="FallArea2D0" type="Area2D" parent="FallAreas2D"]
 position = Vector2( 217.661, 492.6 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="FallArea2D0"]
-shape = SubResource( 44 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D0"]
+shape = SubResource( 43 )
 
-[node name="FallArea2D1" type="Area2D" parent="."]
-position = Vector2( 536.991, 489.736 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="FallArea2D1"]
-shape = SubResource( 44 )
-
-[node name="FallArea2D2" type="Area2D" parent="."]
+[node name="FallArea2D2" type="Area2D" parent="FallAreas2D"]
 position = Vector2( 874.938, 492.6 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="FallArea2D2"]
-shape = SubResource( 44 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D2"]
+shape = SubResource( 43 )
 
-[node name="CheckArea2D0" parent="." instance=ExtResource( 3 )]
+[node name="FallArea2D1" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 536.991, 489.736 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D1"]
+shape = SubResource( 43 )
+
+[node name="CheckAreas2D" type="Node2D" parent="."]
+
+[node name="CheckArea2D0" parent="CheckAreas2D" instance=ExtResource( 3 )]
 position = Vector2( 98.8064, 269.212 )
 
-[node name="CheckArea2D1" parent="." instance=ExtResource( 3 )]
+[node name="CheckArea2D1" parent="CheckAreas2D" instance=ExtResource( 3 )]
 position = Vector2( 325.059, 267.78 )
 
-[node name="CheckArea2D2" parent="." instance=ExtResource( 3 )]
+[node name="CheckArea2D2" parent="CheckAreas2D" instance=ExtResource( 3 )]
 position = Vector2( 675.893, 269.212 )
 
-[node name="Vida00" parent="." instance=ExtResource( 4 )]
-position = Vector2( -0.38855, 236.311 )
+[node name="TargetAreas2D" type="Node2D" parent="."]
 
-[node name="Vida0" parent="." instance=ExtResource( 4 )]
-position = Vector2( -193.706, 232.015 )
-[connection signal="body_entered" from="FallArea2D0" to="Jugador" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="FallArea2D1" to="Jugador" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="FallArea2D2" to="Jugador" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="CheckArea2D0" to="Jugador" method="_on_CheckArea2D0_body_entered"]
-[connection signal="body_entered" from="CheckArea2D1" to="Jugador" method="_on_CheckArea2D0_body_entered"]
-[connection signal="body_entered" from="CheckArea2D2" to="Jugador" method="_on_CheckArea2D0_body_entered"]
+[node name="Disco0" parent="TargetAreas2D" instance=ExtResource( 6 )]
+position = Vector2( 707.378, 234.438 )
+
+[node name="Pantalla0" parent="TargetAreas2D" instance=ExtResource( 7 )]
+position = Vector2( 502.177, -187.842 )
+
+[node name="LifeAreas2D" type="Node2D" parent="."]
+
+[node name="Vida00" parent="LifeAreas2D" instance=ExtResource( 4 )]
+position = Vector2( 708.856, -190.505 )
+
+[node name="HUB" parent="." instance=ExtResource( 5 )]
+
+[node name="GameMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="TorreEnemiga" parent="." instance=ExtResource( 10 )]
+position = Vector2( 40.4615, 248.631 )
+
+[node name="TorreEnemiga2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 396.033, -3.70125 )
+[connection signal="body_entered" from="FallAreas2D/FallArea2D0" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D2" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D1" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="CheckAreas2D/CheckArea2D0" to="Jugador" method="_on_CheckArea2D0_body_entered"]
+[connection signal="body_entered" from="CheckAreas2D/CheckArea2D1" to="Jugador" method="_on_CheckArea2D0_body_entered"]
+[connection signal="body_entered" from="CheckAreas2D/CheckArea2D2" to="Jugador" method="_on_CheckArea2D0_body_entered"]
