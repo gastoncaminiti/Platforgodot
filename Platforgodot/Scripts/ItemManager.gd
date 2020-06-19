@@ -17,7 +17,8 @@ func _ready():
 
 
 func _on_Vida0_body_entered(body):
-	if is_in_group("Vidas"):
-		DataManager.set_life_player(1)
-	$AudioStreamPlayer.play()
-	$AnimationPlayer.play("Delete")
+	if body.is_in_group("Jugadores"):
+		if is_in_group("Vidas"):
+			DataManager.set_life_player(1)
+		$AudioStreamPlayer.play()
+		$AnimationPlayer.play("Delete")
