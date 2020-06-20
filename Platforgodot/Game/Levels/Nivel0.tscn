@@ -462,7 +462,7 @@ position = Vector2( 675.893, 269.212 )
 [node name="TargetAreas2D" type="Node2D" parent="."]
 
 [node name="Disco0" parent="TargetAreas2D" instance=ExtResource( 6 )]
-position = Vector2( 707.378, 234.438 )
+position = Vector2( -296.402, 222.747 )
 
 [node name="Pantalla0" parent="TargetAreas2D" instance=ExtResource( 7 )]
 position = Vector2( 502.177, -187.842 )
