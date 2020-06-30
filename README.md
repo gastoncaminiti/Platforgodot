@@ -41,6 +41,5 @@ A continuación, el listado de los recursos utilizados:
 
 <hr>
 <img src="https://img.itch.zone/aW1hZ2UvNjc2NzQ4LzM3MTIzOTEucG5n/original/p7O%2BiM.png">
-=======
-# Platforgodot
->>>>>>> cdf9d19ebe648df26cc5b85a028ba644775d5569
+<hr>
+
