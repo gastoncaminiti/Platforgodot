@@ -1,14 +1,13 @@
-# TallerGodotEngineFCyT
+# Platforgodot
 
-## Platforgodot
+Platforgodot es un prototipo de videjuego desarrollado con  [Godot Engine](https://godotengine.org/) (versión 3.2) y con recursos creative commons, empleado como ejemplo inicial en el curso de "Desarrollo de videojuegos de plataforma 2D con Godot Engine".
 
-Platforgodot es un prototipo de videjuego desarrollado con  [Godot Engine](https://godotengine.org/)(versión 3.2) y con recursos creative commons, empleado como ejemplo inicial en el curso de "Desarrollo de videojuegos de plataforma 2D con Godot Engine".
-Demo:[itch.io](https://chatora-games.itch.io/platforgodot)
+Demo en [itch.io](https://chatora-games.itch.io/platforgodot)
 
 <hr>
 A continuación, el listado de los recursos utilizados:
 
-### Imágenes
+## Imágenes
 
 [Toon Characters.](https://kenney.nl/assets/toon-characters-1)
 
@@ -30,7 +29,7 @@ A continuación, el listado de los recursos utilizados:
 
 [Emote Pack.](https://kenney.nl/assets/emotes-pack)
 
-### Música
+## Música
 
 [Music Jingles.](https://kenney.nl/assets/music-jingles)
 
@@ -42,3 +41,6 @@ A continuación, el listado de los recursos utilizados:
 
 <hr>
 <img src="https://img.itch.zone/aW1hZ2UvNjc2NzQ4LzM3MTIzOTEucG5n/original/p7O%2BiM.png">
+=======
+# Platforgodot
+>>>>>>> cdf9d19ebe648df26cc5b85a028ba644775d5569
