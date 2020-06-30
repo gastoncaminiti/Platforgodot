@@ -5,17 +5,21 @@ extends KinematicBody2D
 # var b = "text"
 var speed
 export(Vector2) var my_speed
+export(bool) var is_vertical = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	speed = -300
+	speed = -250
 
-func _process(delta):
+func _physics_process(delta):
 	var collision_body = move_and_collide(my_speed * delta)
 	if collision_body != null:
 		if !collision_body.get_collider().is_in_group("Enemigos"):
 			$AnimatedSprite.play("Delete")
 			$AnimatedSprite.z_index=2
-			$AnimatedSprite.global_position.x -= 25
+			if is_vertical:
+				$AnimatedSprite.global_position.y += 25
+			else:	
+				$AnimatedSprite.global_position.x -= 25
 			$CollisionShape2D.disabled = true
 			$SfxImpact.play()
 			my_speed= Vector2(0,0)

@@ -5,7 +5,7 @@ export(PackedScene) var my_laser
 # var a = 2
 # var b = "text"
 
-var my_velocity_x = 300
+var my_velocity_x = 200
 var is_shoot
 var my_target = null
 
@@ -35,13 +35,13 @@ func enemy_shoot():
 		$Arma.flip_h = false
 		$Arma.global_position = $PosShootRight.global_position
 		new_laser.position = $PosShootRight.position
-		new_laser.my_speed = Vector2(300,0)
+		new_laser.my_speed = Vector2(250,0)
 	else:
 		$AnimatedSprite.flip_h = true
 		$Arma.flip_h = true
 		$Arma.global_position = $PosShootLeft.global_position
 		new_laser.position = $PosShootLeft.position
-		new_laser.my_speed = Vector2(-300,0)
+		new_laser.my_speed = Vector2(-250,0)
 	$Arma.visible = true
 	call_deferred("add_child",new_laser)
 	$SfxShoot.play()

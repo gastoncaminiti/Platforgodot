@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Assets/Images/Map/platformerPack_industrial_tilesheet.png" type="Texture" id=1]
 [ext_resource path="res://Game/Scenes/Jugador.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Game/Scenes/Vida.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Interfaces/HUB.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Game/Scenes/Targets/Disco.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Game/Scenes/Targets/Pantalla.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Assets/Sounds/Music/Game.ogg" type="AudioStream" id=8]
 [ext_resource path="res://Scripts/NivelManager.gd" type="Script" id=9]
 [ext_resource path="res://Game/Scenes/TorreEnemiga.tscn" type="PackedScene" id=10]
@@ -403,7 +402,7 @@ points = PoolVector2Array( 0, 0, 70, 0, 70, 70, 0, 70 )
 0/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=43]
-extents = Vector2( 136.982, 12.1249 )
+extents = Vector2( 145.67, 12.1249 )
 
 [node name="Nivel0" type="Node2D"]
 script = ExtResource( 9 )
@@ -412,21 +411,23 @@ script = ExtResource( 9 )
 tile_set = SubResource( 42 )
 cell_size = Vector2( 70, 70 )
 format = 1
-tile_data = PoolIntArray( -65532, 0, 196614, -65531, 0, 196615, -65530, 0, 196615, -65529, 0, 196615, -65528, 0, 196615, -65527, 0, 196615, -65526, 0, 196615, -65525, 0, 196615, -65524, 0, 196616, 14, 0, 131072, 15, 0, 131072, 131062, 0, 131072, 65550, 0, 131072, 65551, 0, 131072, 196598, 0, 131072, 196599, 0, 131072, 131086, 0, 131072, 131087, 0, 131072, 262134, 0, 131072, 262135, 0, 131072, 262136, 0, 131072, 196609, 0, 131084, 196612, 0, 131084, 196617, 0, 131084, 196622, 0, 131072, 196623, 0, 131072, 327670, 0, 4, 327671, 0, 4, 327672, 0, 2, 327673, 0, 2, 327674, 0, 2, 327675, 0, 2, 327676, 0, 2, 327677, 0, 2, 327678, 0, 2, 327679, 0, 2, 262144, 0, 2, 262145, 0, 2, 262148, 0, 2, 262149, 0, 2, 262150, 0, 2, 262151, 0, 0, 262152, 0, 0, 262153, 0, 2, 262154, 0, 2, 262158, 0, 2, 262159, 0, 2, 393206, 0, 4, 393207, 0, 4, 393208, 0, 4, 393209, 0, 4, 393210, 0, 4, 393211, 0, 4, 393212, 0, 4, 393213, 0, 4, 393214, 0, 4, 393215, 0, 4, 327680, 0, 4, 327681, 0, 4, 327684, 0, 4, 327685, 0, 4, 327686, 0, 4, 327689, 0, 4, 327690, 0, 4, 327694, 0, 4, 327695, 0, 4, 458742, 0, 4, 458743, 0, 4, 458744, 0, 4, 458745, 0, 4, 458746, 0, 4, 458747, 0, 4, 458748, 0, 4, 458749, 0, 4, 458750, 0, 4, 458751, 0, 4, 393216, 0, 4, 393217, 0, 4, 393218, 0, 196617, 393219, 0, 196617, 393220, 0, 4, 393221, 0, 4, 393222, 0, 4, 393225, 0, 4, 393226, 0, 4, 393227, 0, 196617, 393228, 0, 196617, 393229, 0, 196617, 393230, 0, 4, 393231, 0, 4, 524278, 0, 4, 524279, 0, 4, 524280, 0, 4, 524281, 0, 4, 524282, 0, 4, 524283, 0, 4, 524284, 0, 4, 524285, 0, 4, 524286, 0, 4, 524287, 0, 4, 458752, 0, 4, 458753, 0, 4, 458754, 0, 4, 458755, 0, 4, 458756, 0, 4, 458757, 0, 4, 458758, 0, 4, 458759, 0, 4, 458760, 0, 4, 458761, 0, 4, 458762, 0, 4, 458763, 0, 4, 458764, 0, 4, 458765, 0, 4, 458766, 0, 4, 458767, 0, 4 )
+tile_data = PoolIntArray( -65520, 0, 131078, -65519, 0, 131079, -65518, 0, 131079, -65517, 0, 131079, -65516, 0, 131079, -65515, 0, 131079, -65514, 0, 131079, -65513, 0, 131079, -65512, 0, 131079, -65511, 0, 131080, 65525, 0, 131072, 57, 0, 196608, 58, 0, 196608, 131061, 0, 131072, 131062, 0, 131072, 65593, 0, 196608, 65594, 0, 196608, 196597, 0, 131072, 196598, 0, 131072, 196599, 0, 131072, 131129, 0, 196608, 131130, 0, 196608, 262133, 0, 131072, 262134, 0, 131072, 262135, 0, 131072, 262136, 0, 131072, 196612, 0, 131084, 196632, 0, 131084, 196648, 0, 65536, 196649, 0, 65537, 196651, 0, 65536, 196652, 0, 65537, 196656, 0, 262157, 196665, 0, 196608, 196666, 0, 196608, 327668, 0, 6, 327669, 0, 2, 327670, 0, 2, 327671, 0, 2, 327672, 0, 2, 327673, 0, 2, 327674, 0, 2, 327675, 0, 2, 327676, 0, 2, 327677, 0, 2, 327678, 0, 2, 327679, 0, 2, 262144, 0, 2, 262145, 0, 2, 262148, 0, 2, 262149, 0, 2, 262150, 0, 2, 262151, 0, 2, 262152, 0, 2, 262153, 0, 2, 262154, 0, 2, 262158, 0, 2, 262159, 0, 2, 262161, 0, 65538, 262162, 0, 65539, 262164, 0, 65538, 262165, 0, 65539, 262167, 0, 65538, 262168, 0, 65539, 262170, 0, 2, 262171, 0, 2, 262172, 0, 2, 262173, 0, 2, 262174, 0, 2, 262175, 0, 2, 262176, 0, 2, 262177, 0, 2, 262178, 0, 2, 262181, 0, 65536, 262182, 0, 65537, 262189, 0, 65536, 262190, 0, 65537, 262201, 0, 196608, 262202, 0, 196608, 393203, 0, 6, 393204, 0, 65542, 393205, 0, 4, 393206, 0, 4, 393207, 0, 4, 393208, 0, 4, 393209, 0, 4, 393210, 0, 4, 393211, 0, 4, 393212, 0, 4, 393213, 0, 4, 393214, 0, 4, 393215, 0, 4, 327680, 0, 4, 327681, 0, 4, 327684, 0, 4, 327685, 0, 4, 327686, 0, 4, 327687, 0, 4, 327688, 0, 4, 327689, 0, 4, 327690, 0, 4, 327694, 0, 4, 327695, 0, 4, 327706, 0, 4, 327707, 0, 4, 327708, 0, 4, 327709, 0, 4, 327710, 0, 4, 327711, 0, 4, 327712, 0, 4, 327713, 0, 4, 327714, 0, 4, 327727, 0, 196614, 327728, 0, 196615, 327729, 0, 196615, 327730, 0, 196615, 327731, 0, 196615, 327732, 0, 196615, 327733, 0, 196615, 327734, 0, 196615, 327735, 0, 196615, 327736, 0, 196616, 327737, 0, 196608, 327738, 0, 196608, 458738, 0, 6, 458739, 0, 65542, 458740, 0, 4, 458741, 0, 4, 458742, 0, 4, 458743, 0, 4, 458744, 0, 4, 458745, 0, 4, 458746, 0, 4, 458747, 0, 4, 458748, 0, 4, 458749, 0, 4, 458750, 0, 4, 458751, 0, 4, 393216, 0, 4, 393217, 0, 4, 393218, 0, 196617, 393219, 0, 196617, 393220, 0, 4, 393221, 0, 4, 393222, 0, 4, 393223, 0, 4, 393224, 0, 4, 393225, 0, 4, 393226, 0, 4, 393227, 0, 196617, 393228, 0, 196617, 393229, 0, 196617, 393230, 0, 4, 393231, 0, 4, 393242, 0, 4, 393243, 0, 4, 393244, 0, 4, 393245, 0, 4, 393246, 0, 4, 393247, 0, 4, 393248, 0, 4, 393249, 0, 4, 393250, 0, 4, 393273, 0, 196608, 393274, 0, 196608, 524273, 0, 6, 524274, 0, 65542, 524275, 0, 4, 524276, 0, 4, 524277, 0, 4, 524278, 0, 4, 524279, 0, 4, 524280, 0, 4, 524281, 0, 4, 524282, 0, 4, 524283, 0, 4, 524284, 0, 4, 524285, 0, 4, 524286, 0, 4, 524287, 0, 4, 458752, 0, 4, 458753, 0, 4, 458754, 0, 4, 458755, 0, 4, 458756, 0, 4, 458757, 0, 4, 458758, 0, 4, 458759, 0, 4, 458760, 0, 4, 458761, 0, 4, 458762, 0, 4, 458763, 0, 4, 458764, 0, 4, 458765, 0, 4, 458766, 0, 4, 458767, 0, 4, 458778, 0, 4, 458779, 0, 4, 458780, 0, 4, 458781, 0, 4, 458782, 0, 4, 458783, 0, 4, 458784, 0, 4, 458785, 0, 4, 458786, 0, 4, 458809, 0, 196608, 458810, 0, 196608, 524345, 0, 196608, 524346, 0, 196608 )
 
 [node name="Jugador" parent="." instance=ExtResource( 2 )]
 position = Vector2( -382.29, 209.381 )
 z_index = 1
-speed = 300
-gravity = 600
+speed = 400
+gravity = 1000
 
 [node name="Camera2D" type="Camera2D" parent="Jugador"]
 current = true
 zoom = Vector2( 1.1, 1.1 )
+smoothing_enabled = true
+smoothing_speed = 20.0
 offset_h = 1.0
 
 [node name="EnemyA0" parent="." instance=ExtResource( 12 )]
-position = Vector2( 531.477, 232.947 )
+position = Vector2( 1922.74, 237.904 )
 
 [node name="FallAreas2D" type="Node2D" parent="."]
 
@@ -443,34 +444,78 @@ position = Vector2( 874.938, 492.6 )
 shape = SubResource( 43 )
 
 [node name="FallArea2D1" type="Area2D" parent="FallAreas2D"]
-position = Vector2( 536.991, 489.736 )
+position = Vector2( 2593.84, 368.693 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D1"]
 shape = SubResource( 43 )
 
-[node name="CheckAreas2D" type="Node2D" parent="."]
+[node name="FallArea2D8" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 2872.76, 368.693 )
 
-[node name="CheckArea2D0" parent="CheckAreas2D" instance=ExtResource( 3 )]
-position = Vector2( 98.8064, 269.212 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D8"]
+shape = SubResource( 43 )
+
+[node name="FallArea2D9" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 3111.83, 375.853 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D9"]
+shape = SubResource( 43 )
+
+[node name="FallArea2D3" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 540.331, 489.736 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D3"]
+position = Vector2( 728.718, -107.332 )
+shape = SubResource( 43 )
+
+[node name="FallArea2D5" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 536.991, 489.736 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D5"]
+position = Vector2( 1134.05, -107.151 )
+shape = SubResource( 43 )
+
+[node name="FallArea2D4" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 536.991, 489.736 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D4"]
+position = Vector2( 1004.3, -106.892 )
+shape = SubResource( 43 )
+
+[node name="FallArea2D6" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 536.991, 489.736 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D6"]
+position = Vector2( -1704.77, 58.7101 )
+shape = SubResource( 43 )
+
+[node name="FallArea2D7" type="Area2D" parent="FallAreas2D"]
+position = Vector2( 536.991, 489.736 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallAreas2D/FallArea2D7"]
+position = Vector2( -1984.5, 58.8127 )
+shape = SubResource( 43 )
+
+[node name="CheckAreas2D" type="Node2D" parent="."]
 
 [node name="CheckArea2D1" parent="CheckAreas2D" instance=ExtResource( 3 )]
 position = Vector2( 325.059, 267.78 )
 
 [node name="CheckArea2D2" parent="CheckAreas2D" instance=ExtResource( 3 )]
-position = Vector2( 675.893, 269.212 )
+position = Vector2( 1700.25, 269.212 )
 
 [node name="TargetAreas2D" type="Node2D" parent="."]
 
 [node name="Disco0" parent="TargetAreas2D" instance=ExtResource( 6 )]
-position = Vector2( -296.402, 222.747 )
-
-[node name="Pantalla0" parent="TargetAreas2D" instance=ExtResource( 7 )]
-position = Vector2( 502.177, -187.842 )
+position = Vector2( 3892.97, 310.842 )
 
 [node name="LifeAreas2D" type="Node2D" parent="."]
 
 [node name="Vida00" parent="LifeAreas2D" instance=ExtResource( 4 )]
-position = Vector2( 708.856, -190.505 )
+position = Vector2( 1044.36, 224.229 )
+
+[node name="Vida01" parent="LifeAreas2D" instance=ExtResource( 4 )]
+position = Vector2( 2655.25, 223.902 )
 
 [node name="HUB" parent="." instance=ExtResource( 5 )]
 
@@ -478,19 +523,28 @@ position = Vector2( 708.856, -190.505 )
 stream = ExtResource( 8 )
 
 [node name="TorreEnemiga" parent="." instance=ExtResource( 10 )]
-position = Vector2( 40.4615, 248.631 )
+position = Vector2( 732.059, 247.33 )
 
 [node name="TorreEnemiga2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 396.033, -3.70125 )
+position = Vector2( 1466.37, -13.3137 )
+
+[node name="TorreEnemiga3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1257.04, -13.3137 )
 
 [node name="DirArea2D0" parent="." instance=ExtResource( 13 )]
-position = Vector2( 316.022, 232.946 )
+position = Vector2( 2416.1, 234.238 )
 
 [node name="DirArea2D1" parent="." instance=ExtResource( 13 )]
-position = Vector2( 735.238, 236.287 )
+position = Vector2( 1854.42, 229.825 )
 [connection signal="body_entered" from="FallAreas2D/FallArea2D0" to="Jugador" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="FallAreas2D/FallArea2D2" to="Jugador" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="FallAreas2D/FallArea2D1" to="Jugador" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="CheckAreas2D/CheckArea2D0" to="Jugador" method="_on_CheckArea2D0_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D8" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D9" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D3" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D5" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D4" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D6" to="Jugador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="FallAreas2D/FallArea2D7" to="Jugador" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="CheckAreas2D/CheckArea2D1" to="Jugador" method="_on_CheckArea2D0_body_entered"]
 [connection signal="body_entered" from="CheckAreas2D/CheckArea2D2" to="Jugador" method="_on_CheckArea2D0_body_entered"]

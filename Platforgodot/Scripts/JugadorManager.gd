@@ -15,6 +15,8 @@ func _ready():
 	DataManager.init_position = global_position
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Input.is_action_pressed("Fullscreen_exit"):
+		OS.window_fullscreen = false
 	velocity.y += gravity * delta
 	if Input.is_action_pressed("Robot_jump") and is_on_floor():
 		velocity.y = -speed

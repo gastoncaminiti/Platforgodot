@@ -132,5 +132,6 @@ tile_data = PoolIntArray( 262144, 0, 131084, 262156, 0, 131084, 327680, 0, 19660
 position = Vector2( 687.731, 312.021 )
 frames = SubResource( 4 )
 animation = "Idle"
+frame = 1
 playing = true
 [connection signal="pressed" from="VBContainer/CContainer2/TextureButton" to="." method="_on_TextureButton_pressed"]
